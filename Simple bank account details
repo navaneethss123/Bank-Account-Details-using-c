@@ -1,0 +1,67 @@
+#include <stdio.h>
+
+// Function prototypes
+void account();
+void transfer_money();
+void check_balance();
+void login();
+
+int main() {
+    int choice;
+    
+    printf("Welcome to our banking system!\n");
+    
+    do {
+        printf("\nMenu:\n");
+        printf("1. Create an account\n");
+        printf("2. Transfer money\n");
+        printf("3. Check balance\n");
+        printf("4. Login\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+        
+        switch(choice) {
+            case 1:
+                account();
+                break;
+            case 2:
+                transfer_money();
+                break;
+            case 3:
+                check_balance();
+                break;
+            case 4:
+                login();
+                break;
+            case 5:
+                printf("Exiting the program. Goodbye!\n");
+                break;
+            default:
+                printf("Invalid choice. Please try again.\n");
+        }
+        
+    } while (choice != 5);
+    
+    return 0;
+}
+
+void account() {
+    printf("Creating a new account...\n");
+    // Code to create a new account
+}
+
+void transfer_money() {
+    printf("Transferring money...\n");
+    // Code to transfer money
+}
+
+void check_balance() {
+    printf("Checking balance...\n");
+    // Code to check balance
+}
+
+void login() {
+    printf("Logging into the account...\n");
+    // Code to login
+}
